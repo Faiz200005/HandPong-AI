@@ -11,7 +11,7 @@ from mediapipe.tasks.python import vision
 HANDPONG_DIR = Path(__file__).parent
 MODEL_PATH = HANDPONG_DIR / "models" / "hand_landmarker.task"
 DATA_PATH = HANDPONG_DIR / "data" / "gestures.csv"
-CAMERA_INDEX = 1  # Ta webcam externe
+CAMERA_INDEX = 0  # Ta webcam externe
 
 if not MODEL_PATH.is_file():
     raise FileNotFoundError(f"Modèle introuvable : {MODEL_PATH}")
